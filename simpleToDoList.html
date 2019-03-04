@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="utf-8">
+	<title>TodoList</title>
+	<script src="./vue.js"></script>
+</head>
+<body>
+	<div id="root">
+		<input v-model="inputValue" />
+		<button @click="handleClick">Submit</button>
+	
+		<ul>
+			<li v-for="(item,index) of toDoList"  :key="index">
+				 To be done{{ index+1 }} ---> {{ item }}
+			</li>
+		</ul>
+	</div>
+	<script>
+		new Vue({
+			el: "#root",
+			data: {
+				inputValue: '',
+				toDoList: []
+			},
+			methods: {
+				handleClick: function() {
+					this.toDoList.push(this.inputValue)
+					this.inputValue = ''
+				}
+			}
+		})
+	</script>
+</body>
+</html>
