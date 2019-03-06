@@ -56,8 +56,12 @@
 			},
 			methods: {
 				handleClick: function() {
-					this.toDoList.push(this.inputValue)
-					this.inputValue = ''
+					if(this.inputValue == ''){
+						alert("you should type something...")
+					}else{
+						this.toDoList.push(this.inputValue)
+						this.inputValue = ''
+					}	
 				},
 				handleDelete:function(index){
 					this.toDoList.splice(index,1)
