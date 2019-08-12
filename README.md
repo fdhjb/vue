@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # todolist
 
 ## Project setup
@@ -27,3 +28,7 @@ npm run lint
 
 ### Customize configuration
 See [Configuration Reference](https://cli.vuejs.org/config/).
+=======
+# vue
+this is a vue selflearning file
+>>>>>>> c9c319a6029c454fb1337b6785efc547ccc85b91
